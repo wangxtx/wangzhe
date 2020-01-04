@@ -1,4 +1,4 @@
-package ioW;
+package streamW;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -12,15 +12,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import dateW.DateUtilW;
-
 /**
- * 
- * @ClassName: IoW 
+ * @ClassName: StreamUtilW
  * @Description: TODO
  * @author: wang
- * @date: 2020年1月3日 下午3:53:41
+ * @date: 2020年1月5日 中午12:00:00
  */
-public class IoUtilW {
+public class StreamUtilW {
 	//按行读取txt文件
 	public static List<String> readLine(InputStream in,boolean explain) throws IOException {
 			if(explain) {

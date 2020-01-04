@@ -4,13 +4,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import dateW.DateUtilW;
-
 /**
- * 
- * @ClassName: RegexUtilW 
+ * @ClassName: RegexUtilW
  * @Description: TODO
  * @author: wang
- * @date: 2020年1月3日 下午2:30:02
+ * @date: 2020年1月5日 中午12:00:00
  */
 public class RegexUtilW {
 	//验证是否为手机号

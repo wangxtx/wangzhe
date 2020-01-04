@@ -8,27 +8,27 @@ public class RegexUtilWTest {
 
 	@Test
 	public void testIsPhoneNumber() {
-		System.out.println("s");
+				System.out.println("测试正常");
 	}
 
 	@Test
 	public void testIsEmail() {
-		System.out.println("s");
+				System.out.println("测试正常");
 	}
 
 	@Test
 	public void testIsNull() {
-		System.out.println("s");
+				System.out.println("测试正常");
 	}
 
 	@Test
 	public void testIsNullAndEmpty() {
-		System.out.println("s");
+				System.out.println("测试正常");
 	}
 
 	@Test
 	public void testIsNullAndEmptyAndSpace() {
-		System.out.println("s");
+				System.out.println("测试正常");
 	}
 
 }

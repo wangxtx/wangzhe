@@ -4,22 +4,21 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 /**
- * 
  * @ClassName: DateUtilW 
  * @Description: TODO
  * @author: wang
- * @date: 2020年1月3日 下午4:33:21
+ * @date: 2020年1月5日 中午12:00:00
  */
 public class DateUtilW {				
 	//根据出生日期获取当前年龄
-	public static  int getAge(String birthday,boolean explain) {																							
+	public static  int getAgeByBirthday(String birthday,boolean explain) {																							
 		if(explain) {
 			System.out.println(DateUtilW.getNow()+"您正在使用:根据出生日期获取当前年龄\r参数:"+birthday);	
 		}
 		String nowTime = new SimpleDateFormat ("yyyy-MM-dd").format(new Date());
 		int y=Integer.parseInt(nowTime.substring(0,4))-Integer.parseInt(birthday.substring(0,4));
 		int m= Integer.parseInt(nowTime.substring(5,7))-Integer.parseInt(birthday.substring(5,7));
-		int d= Integer.parseInt(nowTime.substring(8))-Integer.parseInt(birthday.substring(8));
+		int d= Integer.parseInt(nowTime.substring(8,10))-Integer.parseInt(birthday.substring(8,10));
 		if(m<0) {
 			return y-1;
 		}
@@ -43,7 +42,7 @@ public class DateUtilW {
 	}
 	
 	
-	//获取当前时间的标准格式
+	//获取当前时间的标准格式及作者和说明文档表示
 	public static  String getNow() {
 	String now ="["+new  SimpleDateFormat ("yyyy-MM-dd HH:mm:ss").format(new Date())+"]   ###王行天下出品###   ###哲出必属精品###\r[---说明文档---]\r";
 	return now;
@@ -71,11 +70,11 @@ public class DateUtilW {
 			System.out.println(DateUtilW.getNow()+"您正在使用:获取一个的在两者之间的随机时间\r参数:"+a+"  "+b);	
 		}
 		int a1 = Integer.parseInt(a.substring(0,4))-1900;
-		int a2 = Integer.parseInt(a.substring(5,7));
-		int a3=Integer.parseInt(a.substring(8));
+		int a2 = Integer.parseInt(a.substring(5,7))-1;
+		int a3=Integer.parseInt(a.substring(8,10));
 		int b1=Integer.parseInt(b.substring(0,4))-1900;
-		int b2=Integer.parseInt(b.substring(5,7));
-		int b3=Integer.parseInt(b.substring(8));
+		int b2=Integer.parseInt(b.substring(5,7))-1;
+		int b3=Integer.parseInt(b.substring(8,10));
 		Date d1=new Date(a1,a2,a3);
 		Date d2=new Date(b1,b2,b3);
 		//获取开始日期的毫秒数
@@ -122,5 +121,47 @@ public class DateUtilW {
 		
 	}
 	
+	//将一个yyyy-MM-dd格式的字符串转换为Date类型(年月日)
+	public static Date getDateByStringBy_yyyy_MM_dd(String yyyy_MM_dd,boolean  explain) {
+		if(explain) {
+			System.out.println(DateUtilW.getNow()+"您正在使用:将一个yyyy_MM_dd的字符串转换为Date类型\r参数:"+yyyy_MM_dd);
+		}
+		int yyyy=Integer.parseInt(yyyy_MM_dd.substring(0,4))-1900;
+		int MM= Integer.parseInt(yyyy_MM_dd.substring(5,7))-1;
+		int dd= Integer.parseInt(yyyy_MM_dd.substring(8,10));
+		return new Date(yyyy, MM, dd);
+	}
+	
+	//将一个yyyy-MM-dd HH:mm:ss格式的字符串转换为Date类型(年月日时分秒)
+	public static Date getDateByStringBy_yyyy_MM_dd_HH_mm_ss(String yyyy_MM_dd_HH_mm_ss,boolean  explain) {
+		if(explain) {
+			System.out.println(DateUtilW.getNow()+"您正在使用:将一个yyyy_MM_dd HH:mm:ss格式的字符串转换为Date类型\r参数:"+yyyy_MM_dd_HH_mm_ss);
+		}
+		int yyyy=Integer.parseInt(yyyy_MM_dd_HH_mm_ss.substring(0,4))-1900;
+		int MM= Integer.parseInt(yyyy_MM_dd_HH_mm_ss.substring(5,7))-1;
+		int dd= Integer.parseInt(yyyy_MM_dd_HH_mm_ss.substring(8,10));
+		int HH=Integer.parseInt(yyyy_MM_dd_HH_mm_ss.substring(11,13));
+		int mm=Integer.parseInt(yyyy_MM_dd_HH_mm_ss.substring(14,16));
+		int ss=Integer.parseInt(yyyy_MM_dd_HH_mm_ss.substring(17,19));
+		return new Date(yyyy, MM, dd, HH, mm, ss);
+	}
+	
+	//将一个Date对象转换为String类型(yyyy-MM-dd年月日)
+	public static String getStringyyyy_MM_ddByDate(Date date,boolean  explain) {
+		if(explain) {
+			System.out.println(DateUtilW.getNow()+"您正在使用:将一个Date对象转换为String类型(yyyy-MM-dd年月日)\r参数:"+date);
+		}
+		return new SimpleDateFormat("yyyy-MM-dd").format(date);
+	}
+	
+	
+	//将一个Date对象转换为String类型(yyyy-MM-dd HH:mm:ss年月日时分秒)
+	public static String getStringyyyy_MM_dd_HH_mm_ssByDate(Date date,boolean  explain) {
+		if(explain) {
+			System.out.println(DateUtilW.getNow()+"您正在使用:将一个Date对象转换为String类型(yyyy-MM-dd HH:mm:ss年月日时分秒)\r参数:"+date);
+		}
+		return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(date);
+	}
+
 	
 }

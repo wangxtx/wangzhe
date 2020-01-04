@@ -5,8 +5,13 @@ import java.util.Date;
 import java.util.Random;
 
 import dateW.DateUtilW;
-
-public class NumberW {
+/**
+ * @ClassName: NumberUtilW
+ * @Description: TODO
+ * @author: wang
+ * @date: 2020年1月5日 中午12:00:00
+ */
+public class NumberUtilW {
 	//验证是否为数字(包括小数)
 	public static boolean isNumberAndDecimals(String str,boolean explain) {
 		String regex="\\-?\\d+(\\.\\d+)?";

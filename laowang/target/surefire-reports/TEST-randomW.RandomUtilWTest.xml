@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="9" failures="0" name="stringW.StringUtilWTest" time="0" errors="0" skipped="0">
+<testsuite tests="9" failures="0" name="randomW.RandomUtilWTest" time="0" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\bin"/>
@@ -61,13 +61,13 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="stringW.StringUtilWTest" name="testGetDateByStringBy_yyyy_MM_dd" time="0"/>
-  <testcase classname="stringW.StringUtilWTest" name="testIsNullAndEmptyAndSpace" time="0"/>
-  <testcase classname="stringW.StringUtilWTest" name="testGetStringyyyy_MM_dd_HH_mm_ssByDate" time="0"/>
-  <testcase classname="stringW.StringUtilWTest" name="testGetDateByStringBy_yyyy_MM_dd_HH_mm_ss" time="0"/>
-  <testcase classname="stringW.StringUtilWTest" name="testFirstStringToLowerCase" time="0"/>
-  <testcase classname="stringW.StringUtilWTest" name="testGetStringyyyy_MM_ddByDate" time="0"/>
-  <testcase classname="stringW.StringUtilWTest" name="testFirstStringToUpperCase" time="0"/>
-  <testcase classname="stringW.StringUtilWTest" name="testIsNullAndEmpty" time="0"/>
-  <testcase classname="stringW.StringUtilWTest" name="testIsNull" time="0"/>
+  <testcase classname="randomW.RandomUtilWTest" name="testRandomChineseStringBoolean" time="0"/>
+  <testcase classname="randomW.RandomUtilWTest" name="testGetRandomChineseFirstName" time="0"/>
+  <testcase classname="randomW.RandomUtilWTest" name="testGetChar" time="0"/>
+  <testcase classname="randomW.RandomUtilWTest" name="testGetRandomInt" time="0"/>
+  <testcase classname="randomW.RandomUtilWTest" name="testGetMin_MaxRandomBySubs" time="0"/>
+  <testcase classname="randomW.RandomUtilWTest" name="testGetRandomChineseName" time="0"/>
+  <testcase classname="randomW.RandomUtilWTest" name="testRandomChineseStringIntBoolean" time="0"/>
+  <testcase classname="randomW.RandomUtilWTest" name="testGetRandomChineseNameByFirstName" time="0"/>
+  <testcase classname="randomW.RandomUtilWTest" name="testGetRandomStrings" time="0"/>
 </testsuite>

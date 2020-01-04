@@ -1,53 +1,53 @@
-package stringW;
+package randomW;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class StringUtilWTest {
+public class RandomUtilWTest {
 
 	@Test
-	public void testIsNull() {
+	public void testGetRandomInt() {
 				System.out.println("测试正常");
 	}
 
 	@Test
-	public void testIsNullAndEmpty() {
+	public void testGetChar() {
 				System.out.println("测试正常");
 	}
 
 	@Test
-	public void testIsNullAndEmptyAndSpace() {
+	public void testGetMin_MaxRandomBySubs() {
 				System.out.println("测试正常");
 	}
 
 	@Test
-	public void testFirstStringToLowerCase() {
+	public void testGetRandomStrings() {
 				System.out.println("测试正常");
 	}
 
 	@Test
-	public void testFirstStringToUpperCase() {
+	public void testRandomChineseStringBoolean() {
 				System.out.println("测试正常");
 	}
 
 	@Test
-	public void testGetDateByStringBy_yyyy_MM_dd() {
+	public void testRandomChineseStringIntBoolean() {
 				System.out.println("测试正常");
 	}
 
 	@Test
-	public void testGetDateByStringBy_yyyy_MM_dd_HH_mm_ss() {
+	public void testGetRandomChineseFirstName() {
 				System.out.println("测试正常");
 	}
 
 	@Test
-	public void testGetStringyyyy_MM_ddByDate() {
+	public void testGetRandomChineseName() {
 				System.out.println("测试正常");
 	}
 
 	@Test
-	public void testGetStringyyyy_MM_dd_HH_mm_ssByDate() {
+	public void testGetRandomChineseNameByFirstName() {
 				System.out.println("测试正常");
 	}
 

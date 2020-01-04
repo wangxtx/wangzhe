@@ -5,8 +5,13 @@ import java.util.HashSet;
 import java.util.Random;
 
 import dateW.DateUtilW;
-
-public class RandomW {
+/**
+ * @ClassName: RandomUtilW
+ * @Description: TODO
+ * @author: wang
+ * @date: 2020年1月5日 中午12:00:00
+ */
+public class RandomUtilW {
 	
 	//获得一个在min-max之间的随机整数
 	public static int getRandomInt(int min,int max,boolean  explain) {
@@ -132,7 +137,7 @@ public class RandomW {
 				"公良","拓拔","夹谷","宰父","谷梁","段干","百里","东郭","南门","呼延","归","海","羊舌",
 				"微生","梁丘","左丘","东门","西门","南宫"};
 		//获取随机姓氏
-		String firstName= str[RandomW.getRandomInt(0, str.length-1,false)];
+		String firstName= str[RandomUtilW.getRandomInt(0, str.length-1,false)];
 		return firstName;
 	}
 	
@@ -146,7 +151,7 @@ public class RandomW {
 		String firstName= getRandomChineseFirstName(false);
 		
 		//获取名字
-		String lastName = randomChineseString(RandomW.getRandomInt(1, 2,false),false);
+		String lastName = randomChineseString(RandomUtilW.getRandomInt(1, 2,false),false);
 		
 		return firstName + lastName;
 	}
@@ -156,7 +161,7 @@ public class RandomW {
 		if(explain) {
 			System.out.println(DateUtilW.getNow()+"您正在使用:获取一个指定姓氏的中文名字\r参数:"+firstName);	
 		}
-		return firstName+RandomW.randomChineseString(RandomW.getRandomInt(1,2, false), false);
+		return firstName+RandomUtilW.randomChineseString(RandomUtilW.getRandomInt(1,2, false), false);
 		
 	}
 

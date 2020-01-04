@@ -1,6 +1,6 @@
-ioW\IoUtilW.class
 stringW\StringUtilW.class
-randomW\RandomW.class
+numberW\NumberUtilW.class
 dateW\DateUtilW.class
 regexW\RegexUtilW.class
-numberW\NumberW.class
+streamW\StreamUtilW.class
+randomW\RandomUtilW.class
