@@ -18,7 +18,7 @@ public class RegexUtilW {
 		String regex="1[3|5|6|7|8]\\d{9}";
 		boolean b = phone.matches(regex);
 		if(explain) {
-			System.out.println(DateUtilW.getNow()+"您正在使用:验证是否为手机号\r\n参数:"+phone);	
+			System.out.println(DateUtilW.getNow()+"您正在使用:验证是否为手机号\r参数:"+phone);	
 		}
 		return b ;	
 	}
@@ -28,7 +28,7 @@ public class RegexUtilW {
 		String regex="[A-Za-z0-9]+\\@[A-Za-z0-9]+\\.[A-Za-z0-9]+";
 		boolean b=email.matches(regex);
 		if(explain) {
-			System.out.println(DateUtilW.getNow()+"您正在使用:验证是否Email邮箱\r\n参数:"+email);	
+			System.out.println(DateUtilW.getNow()+"您正在使用:验证是否Email邮箱\r参数:"+email);	
 		}
 		return b;
 	}

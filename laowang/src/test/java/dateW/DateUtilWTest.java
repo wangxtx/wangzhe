@@ -1,34 +1,44 @@
 package dateW;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-class DateUtilWTest {
+public class DateUtilWTest {
 
 	@Test
-	void testGetAge() {
-		fail("Not yet implemented");
+	public void testGetAge() {
+		System.out.println("s");
 	}
 
 	@Test
-	void testGetNowMsec() {
-		fail("Not yet implemented");
+	public void testGetNowMsec() {
+		System.out.println("s");
 	}
 
 	@Test
-	void testGetNow() {
-		fail("Not yet implemented");
+	public void testGetNow() {
+		System.out.println("s");
 	}
 
 	@Test
-	void testGetABMsecDateDateBoolean() {
-		fail("Not yet implemented");
+	public void testGetABMsecDateDateBoolean() {
+		System.out.println("s");
 	}
 
 	@Test
-	void testGetABMsecStringStringBoolean() {
-		fail("Not yet implemented");
+	public void testGetABMsecStringStringBoolean() {
+		System.out.println("s");
+	}
+
+	@Test
+	public void testGetMonthFirstDay() {
+		System.out.println("s");
+	}
+
+	@Test
+	public void testGetMonthLastDay() {
+		System.out.println("s");
 	}
 
 }

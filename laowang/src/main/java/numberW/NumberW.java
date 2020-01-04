@@ -12,7 +12,7 @@ public class NumberW {
 		String regex="\\-?\\d+(\\.\\d+)?";
 		boolean b=str.matches(regex);
 		if(explain) {
-			System.out.println(DateUtilW.getNow()+"您正在使用:验证是否为数字(包括小数)\r\n参数:"+str);	
+			System.out.println(DateUtilW.getNow()+"您正在使用:验证是否为数字(包括小数)\r参数:"+str);	
 		}
 		return b;
 	}
@@ -22,7 +22,7 @@ public class NumberW {
 		String regex="\\-?\\d+\\d+";
 		boolean b=str.matches(regex);
 		if(explain) {
-			System.out.println(DateUtilW.getNow()+"您正在使用:验证是否为数字(不包括小数)\r\n参数:"+str);	
+			System.out.println(DateUtilW.getNow()+"您正在使用:验证是否为数字(不包括小数)\r参数:"+str);	
 		}
 		return b;
 	}

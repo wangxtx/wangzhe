@@ -18,7 +18,7 @@ public class StringUtilW {
 		
 		boolean b=str!=null;
 			if(explain) {
-				System.out.println(DateUtilW.getNow()+"您正在使用:验证字符串是否为Null\r\n参数:"+str);
+				System.out.println(DateUtilW.getNow()+"您正在使用:验证字符串是否为Null\r参数:"+str);
 			}
 			return b;
 	}
@@ -28,7 +28,7 @@ public class StringUtilW {
 		
 		boolean b=str.length()!=0 && str!=null;
 			if(explain) {
-				System.out.println(DateUtilW.getNow()+"您正在使用:验证字符串是否为Null或空串\r\n参数:"+str);
+				System.out.println(DateUtilW.getNow()+"您正在使用:验证字符串是否为Null或空串\r参数:"+str);
 			}
 			return b;
 	}
@@ -38,7 +38,7 @@ public class StringUtilW {
 		
 		boolean b=str.trim( ).length()!=0 && str!=null;
 			if(explain) {
-				System.out.println(DateUtilW.getNow()+"您正在使用:验证字符串是否为Null或空串或纯空格\r\n参数:"+str);
+				System.out.println(DateUtilW.getNow()+"您正在使用:验证字符串是否为Null或空串或纯空格\r参数:"+str);
 			}
 			return b;
 	}

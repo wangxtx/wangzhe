@@ -1,14 +1,24 @@
 package stringW;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-class StringUtilWTest {
+public class StringUtilWTest {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	public void testIsNull() {
+		System.out.println("s");
+	}
+
+	@Test
+	public void testIsNullAndEmpty() {
+		System.out.println("s");
+	}
+
+	@Test
+	public void testIsNullAndEmptyAndSpace() {
+		System.out.println("s");
 	}
 
 }

@@ -1,14 +1,19 @@
 package ioW;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-class IoUtilWTest {
+public class IoUtilWTest {
 
 	@Test
-	void testReadLine() {
-		fail("Not yet implemented");
+	public void testReadLineInputStreamBoolean() {
+		System.out.println("s");
+	}
+
+	@Test
+	public void testReadLineReaderBoolean() {
+		System.out.println("s");
 	}
 
 }

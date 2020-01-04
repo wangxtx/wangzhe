@@ -11,7 +11,7 @@ public class RandomW {
 	//获得一个在min-max之间的随机整数
 	public static int getRandomInt(int min,int max,boolean  explain) {
 		if(explain) {
-			System.out.println(DateUtilW.getNow()+"您正在使用:获得一个在min-max之间的随机整数\r\n参数:"+min+"  "+max);	
+			System.out.println(DateUtilW.getNow()+"您正在使用:获得一个在min-max之间的随机整数\r参数:"+min+"  "+max);	
 		}
 		int num=new Random().nextInt((max-min)+1)+min;
 		return num;
@@ -30,7 +30,7 @@ public class RandomW {
 	//获得第一个值到第二个值之间的subs个不重复的随机数
 	public static int[] getMin_MaxRandomBySubs (int min, int max, int subs,boolean  explain){
 		if(explain) {
-			System.out.println(DateUtilW.getNow()+"您正在使用:获得第一个值到第二个值之间的subs个不重复的随机数\r\n参数:"+min+"  "+max+"  "+subs);	
+			System.out.println(DateUtilW.getNow()+"您正在使用:获得第一个值到第二个值之间的subs个不重复的随机数\r参数:"+min+"  "+max+"  "+subs);	
 		}
 		int[] x =new int[subs];//声明数组用来存放结果值
 		
@@ -50,7 +50,7 @@ public class RandomW {
 	//获取length个随机字符
 	public static String getRandomStrings(int length,boolean  explain){
 		if(explain) {
-			System.out.println(DateUtilW.getNow()+"您正在使用:获取length个随机字符\r\n参数:"+length);	
+			System.out.println(DateUtilW.getNow()+"您正在使用:获取length个随机字符\r参数:"+length);	
 		}
 		String str="";
 		 for(int i =0 ;i<length; i++) {
@@ -86,7 +86,7 @@ public class RandomW {
 	// 获取length个在GB2312(相当于中文简体)范围内的中文汉字字符串
 	public static String randomChineseString(int length,boolean  explain) {
 		if(explain) {
-			System.out.println(DateUtilW.getNow()+"您正在使用:获取length个在GB2312(相当于中文简体)范围内的中文汉字字符串\r\n参数:"+length);	
+			System.out.println(DateUtilW.getNow()+"您正在使用:获取length个在GB2312(相当于中文简体)范围内的中文汉字字符串\r参数:"+length);	
 		}
 		  StringBuilder sb = new StringBuilder();
 		for (int i = 0; i < length; i++) {
@@ -154,7 +154,7 @@ public class RandomW {
 	//获取一个指定姓氏的中文名字
 	public static String getRandomChineseNameByFirstName(String firstName,boolean  explain) {
 		if(explain) {
-			System.out.println(DateUtilW.getNow()+"您正在使用:获取一个指定姓氏的中文名字");	
+			System.out.println(DateUtilW.getNow()+"您正在使用:获取一个指定姓氏的中文名字\r参数:"+firstName);	
 		}
 		return firstName+RandomW.randomChineseString(RandomW.getRandomInt(1,2, false), false);
 		

@@ -24,7 +24,7 @@ public class IoUtilW {
 	//按行读取txt文件
 	public static List<String> readLine(InputStream in,boolean explain) throws IOException {
 			if(explain) {
-				System.out.println(DateUtilW.getNow()+"您正在使用:按行读取txt文件\r\n参数:"+in);	
+				System.out.println(DateUtilW.getNow()+"您正在使用:按行读取txt文件\r参数:"+in);	
 			}
 			List<String>list=new ArrayList<String>();
 			BufferedReader br = new BufferedReader(new InputStreamReader(in,"utf-8"));
@@ -34,4 +34,19 @@ public class IoUtilW {
 			}
 			return list;
 	}
+	
+	//按行读取txt文件
+	public static List<String> readLine(Reader reader,boolean explain) throws IOException {
+			if(explain) {
+				System.out.println(DateUtilW.getNow()+"您正在使用:按行读取txt文件\r参数:"+reader);	
+			}
+			List<String>list=new ArrayList<String>();
+			BufferedReader br = new BufferedReader(reader);
+			String str=null;
+			while((str=br.readLine())!=null) {
+				list.add(str);
+			}
+			return list;
+	}
+	
 }
