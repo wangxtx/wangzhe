@@ -2,5 +2,6 @@ stringW\StringUtilW.class
 numberW\NumberUtilW.class
 dateW\DateUtilW.class
 regexW\RegexUtilW.class
+explainW\Help.class
 streamW\StreamUtilW.class
 randomW\RandomUtilW.class
