@@ -19,6 +19,9 @@ import dateW.DateUtilW;
  * @date: 2020年1月5日 中午12:00:00
  */
 public class StreamUtilW {
+	
+	
+	
 	//按行读取txt文件
 	public static List<String> readLine(InputStream in,boolean explain) throws IOException {
 			if(explain) {
@@ -46,5 +49,39 @@ public class StreamUtilW {
 			}
 			return list;
 	}
+   
+    
+    
+    
+    
+    /**
+     * 
+     * 以上为有说明，以下为无说明
+     * 
+     */
+    
+    
+    
+   
+	//按行读取txt文件
+	public static List<String> readLine(InputStream in) throws IOException {
+			List<String>list=new ArrayList<String>();
+			BufferedReader br = new BufferedReader(new InputStreamReader(in,"utf-8"));
+			String str=null;
+			while((str=br.readLine())!=null) {
+				list.add(str);
+			}
+			return list;
+	}
 	
+	//按行读取txt文件
+	public static List<String> readLine(Reader reader) throws IOException {
+			List<String>list=new ArrayList<String>();
+			BufferedReader br = new BufferedReader(reader);
+			String str=null;
+			while((str=br.readLine())!=null) {
+				list.add(str);
+			}
+			return list;
+	}
 }
